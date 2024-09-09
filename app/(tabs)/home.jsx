@@ -8,10 +8,10 @@ const Home = () => {
     <Text>Addenda</Text>
     <ScrollView contentContainerStyle={{paddingVertical:10,gap:25}} >
         <View className='bg-purple-300 w-full h-[250px]'>
-            <Text>Wee</Text>
+            <Text>Placeholder</Text>
         </View>
         <View className='bg-purple-300 w-full h-[250px]'>
-            <Text>Wee</Text>
+            <Text>Placeholder</Text>
         </View>
   </ScrollView>
       

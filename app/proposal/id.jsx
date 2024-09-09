@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const Transfer = () => {
+const Proposal = () => {
   return (
     <View>
-      <Text>Transfers</Text>
+      <Text>Proposal</Text>
     </View>
   )
 }
 
-export default Transfer
+export default Proposal

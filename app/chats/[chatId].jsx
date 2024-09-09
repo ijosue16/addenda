@@ -115,19 +115,25 @@ import { fakeChat } from "../../constants/fakedata";
             <LeftArrowSvg width={30} height={25} />
           </Pressable>
   
-          <View className="flex flex-row items-center justify-center w-full space-x-2 ">
+          <View className="flex flex-row items-center justify-start flex-1 gap-4 px-6 ">
             <View className="flex items-center justify-center rounded-full w-9 h-9 bg-slate-700">
               <Text className="text-white">EN</Text>
             </View>
-            <Text className="text-2xl font-bold">Ethan</Text>
+            <View className='gap-0 '>
+            <Text className="text-lg font-bold ">Ethan</Text>
+            <Text className=''>active 2h ago</Text>
+            </View>
           </View>
+        
+            <AddSvg width={20} height={20}/>
+          
         </View>
         <KeyboardAvoidingView
           style={{ flex: 1}}
         >
-        <ImageBackground
+        <View
           style={{ flex: 1,marginBottom:Platform.OS ==='ios'? insets.bottom:10 }}
-          source={require("../../assets/chat-wallpaper.jpeg")}
+          // source={require("../../assets/chat-wallpaper.jpeg")}
         >
           <GiftedChat
             messages={messages}
@@ -183,6 +189,7 @@ import { fakeChat } from "../../constants/fakedata";
                   justifyContent: 'center',
                   gap: 14,
                   paddingHorizontal: 14,
+                  backgroundColor:'#d1c2c2'
                 }}>
                 {text === '' && (
                   <>
@@ -190,7 +197,7 @@ import { fakeChat } from "../../constants/fakedata";
                   source={icons.add}
                   
                   className="w-8 h-8"/> */}
-                  <AddSvg width={30} height={30} />
+                  {/* <AddSvg width={30} height={30} /> */}
                   </>
                 )}
                 {text !== '' && (
@@ -210,7 +217,7 @@ import { fakeChat } from "../../constants/fakedata";
               <InputToolbar
                 {...props}
                 containerStyle={{
-                  backgroundColor: '#F5F7F8',
+                  backgroundColor: '#d1c2c2',
              
                 }}
                 renderActions={()=>(
@@ -220,7 +227,7 @@ import { fakeChat } from "../../constants/fakedata";
               )}
           
           />
-        </ImageBackground>
+        </View>
         </KeyboardAvoidingView>
         {/* <Toast config={toastConfig} /> */}
       </>
@@ -229,11 +236,13 @@ import { fakeChat } from "../../constants/fakedata";
   
   const styles = StyleSheet.create({
     textField:{
-      backgroundColor:'#fff',
+      backgroundColor:'#d9d9d9',
       borderRadius:15,
       paddingHorizontal:10,
-      paddingTop:10,
-      marginVertical:5,
+      // paddingTop:10,
+      // marginVertical:5,
+      // justifyContent:'center',
+      // alignItems:'center',
       fontSize:16,
     }
   })

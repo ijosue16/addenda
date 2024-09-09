@@ -37,6 +37,7 @@ const TabsLayout = () => {
           tabBarShowLabel: false,
           tabBarActiveTintColor: "#fff",
           tabBarInactiveTintColor: "#0d0446",
+          headerShadowVisible:false,
           tabBarStyle: {
             backgroundColor: "#d1c2c2",
             height: 80,
@@ -62,14 +63,17 @@ const TabsLayout = () => {
               }}
             />
        <Tabs.Screen
-              name={'cases'}
+              name={'proposals'}
               options={{
-                title:'Proposal Page',
+                title:'Proposals',
                 headerShown: true,
                 headerBackTitleVisible:false,
+                headerStyle:{
+                backgroundColor:"#d1c2c2",
+                },
                 tabBarIcon: ({ color, focused }) => (
                   <TabIcon
-                    name={'cases'}
+                    name={'proposals'}
                     //   children={tab.icon}
                     focused={focused}
                     renderIcon={() => renderIcon(FileSvg, color, 'fill')}
@@ -82,6 +86,9 @@ const TabsLayout = () => {
               options={{
                 title:'Case upload',
                 headerShown: true,
+                headerStyle:{
+                  backgroundColor:"#d1c2c2",
+                  },
                 tabBarIcon: ({ color, focused }) => (
                   <TabIcon
                     name={'case upload'}
@@ -97,6 +104,9 @@ const TabsLayout = () => {
               options={{
                 title:'Chat',
                 headerShown: true,
+                headerStyle:{
+                  backgroundColor:"#d1c2c2",
+                  },
                 tabBarIcon: ({ color, focused }) => (
                   <TabIcon
                     name={'chat'}
@@ -108,13 +118,16 @@ const TabsLayout = () => {
               }}
             />
        <Tabs.Screen
-              name={'(notifications)'}
+              name={'notification'}
               options={{
-                title:'Notifications',
+                title:'Notification',
                 headerShown: true,
+                headerStyle:{
+                  backgroundColor:"#d1c2c2",
+                  },
                 tabBarIcon: ({ color, focused }) => (
                   <TabIcon
-                    name={'notifications'}
+                    name={'notification'}
                     //   children={tab.icon}
                     focused={focused}
                     renderIcon={() => renderIcon(BellSvg, color,'fill')}
@@ -127,6 +140,9 @@ const TabsLayout = () => {
               options={{
                 title:'Profile',
                 headerShown: true,
+                headerStyle:{
+                  backgroundColor:"#d1c2c2",
+                  },
                 tabBarIcon: ({ color, focused }) => (
                   <TabIcon
                     name={'profile'}
