@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, TouchableOpacity, ScrollView, KeyboardAvoidingView } from "react-native";
+import { View, Text, SafeAreaView, TouchableOpacity, ScrollView, KeyboardAvoidingView, Image } from "react-native";
 import React from "react";
 import { router } from "expo-router";
 import { useForm } from "react-hook-form";
@@ -28,9 +28,7 @@ const Login = () => {
         </TouchableOpacity>
       </View>
       <Text className="text-lg text-center">Welcome back</Text>
-      <View className="w-full h-56 bg-purple-500">
-
-      </View>
+    <Image resizeMode="contain"  source={require('../../assets/addenda-login.png')} style={{width:'100%',height:'50%',marginHorizontal:'20'}}/>
       <View className="flex flex-col flex-1 px-4 gap-y-4">
         <View className="flex flex-row justify-between gap-6">
           <CustomInput name="mobileNumber" control={control}

@@ -28,6 +28,8 @@ import {
 import LeftArrowSvg from "../../assets/svgs/left-arrow";
 import AddSvg from "../../assets/svgs/add";
 import { fakeChat } from "../../constants/fakedata";
+import SendSvg from "../../assets/svgs/send";
+import InfoSvg from "../../assets/svgs/infoSvg";
 //   import LeftArrowSvg from "../../assets/icons/svgs/left-arrow";
 //   import AddSvg from "../../assets/icons/svgs/add";
   
@@ -125,7 +127,7 @@ import { fakeChat } from "../../constants/fakedata";
             </View>
           </View>
         
-            <AddSvg width={20} height={20}/>
+            <InfoSvg width={20} height={20}/>
           
         </View>
         <KeyboardAvoidingView
@@ -206,7 +208,7 @@ import { fakeChat } from "../../constants/fakedata";
                     containerStyle={{
                       justifyContent: 'center',
                     }}>
-                    <Text className="p-4 bg-red-500 ">Send</Text>
+                    <SendSvg width={30} height={30} />
                   </Send>
                 )}
               </View>

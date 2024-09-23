@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, TouchableOpacity } from 'react-native'
+import { View, Text, SafeAreaView, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
 import { router } from 'expo-router'
 
@@ -14,12 +14,14 @@ const index = () => {
     </TouchableOpacity>
         </View>
       
-      <View className='flex flex-1 gap-y-12 w-[100%] py-4 px-8'>
-    <View className='w- h-[250px] bg-purple-300'>
-        <Text>1</Text>
-    </View>
-    <View className='w- h-[250px] bg-purple-300'>
-        <Text>1</Text>
+      <View className='flex flex-1 gap-y-4 w-[100%] py-4 px-8'>
+      <Image resizeMode="contain"  source={require('../../assets/addenda-splash.png')} style={{width:'100%',height:'50%',marginHorizontal:'20'}}/>
+
+    <View className='w- h-[250px] gap-4'>
+        <Text className='text-2xl font-semibold text-center text-green-700'>Get the Legal Help You Need, When You Need It</Text>
+        <Text className='text-xl font-medium text-center text-blue-600'>Addenda connects you with qualified lawyers. </Text>
+        <Text className='text-xl font-medium text-center text-blue-600'>Don’t let legal issues overwhelm you - Addenda is here to assist.
+        Don't wait - every minute counts.</Text>
     </View>
     <TouchableOpacity onPress={()=>router.push('/signup')} >
         <View className='items-center justify-center p-4 bg-blue-900'>
